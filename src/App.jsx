@@ -31,7 +31,7 @@ function App() {
     try {
       setIsDetailLoading(true);
       const res = await fetch(
-        `https://www.omdbapi.com/?apikey=244cffc4&i=${id}`,
+        `https://www.omdbapi.com/?apikey=YourImDBApiKey=${id}`,
       );
       if (!res.ok) throw new Error("Failed to fetch movie details");
       const data = await res.json();
